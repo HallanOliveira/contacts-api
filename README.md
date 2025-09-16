@@ -1,7 +1,7 @@
 # Contacts API
 
 A simple **Contacts API** built with **Node.js**, **TypeScript**, and **Express**, following a clean architecture structure.
-This project is a portfolio project demonstrating best practices in TypeScript, Docker, and project structure.
+This project is designed as a portfolio project and demonstrates best practices in TypeScript, Docker, and project structure.
 
 ## Project Structure
 
@@ -20,7 +20,7 @@ src/
 * Docker and Docker Compose
 * Make (optional, for convenience)
 
-## Running the Project
+## Run the Project
 
 ### Using Makefile (recommended)
 
@@ -40,10 +40,10 @@ make dev
 make prod
 ```
 
-* Compiles TypeScript code to `dist/`.
+* Builds the TypeScript project to `dist/`.
 * Runs the compiled code using `node dist/index.js`.
 
-#### Cleaning Docker Images
+#### Clean images
 
 ```bash
 make clean
@@ -51,7 +51,7 @@ make clean
 
 * Removes development and production Docker images.
 
-### Using Docker Directly
+### Using Docker directly
 
 #### Development
 
@@ -92,6 +92,6 @@ docker run -d --rm --name contacts-api-prod -p 3000:3000 contacts-api-prod
 ## Notes
 
 * This project is intended for portfolio purposes.
-* Development mode supports hot reload using `ts-node-dev`.
-* Production mode runs compiled JavaScript code in `dist/`.
+* In development mode, hot reload is enabled using `ts-node-dev`.
+* In production mode, the TypeScript code is compiled to JavaScript in `dist/`.
 * Container names and image tags are managed via the `Makefile`.
